@@ -31,6 +31,11 @@
         <activity android:name=".view.convat.ConVat"></activity>
         <activity android:name=".view.chucai.BangChuCai"></activity>
         <activity android:name=".view.mausac.Mausac"></activity>
+        <activity android:name=".basic.CustomListVIewActivity"></activity>
+        <activity android:name=".view.sodem.SoDem"></activity>
+        <activity android:name=".basic.CustomAdapter"></activity>
+
+
 
 
 

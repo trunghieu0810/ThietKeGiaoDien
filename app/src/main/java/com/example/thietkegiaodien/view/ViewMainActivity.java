@@ -10,15 +10,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.thietkegiaodien.R;
 import com.example.thietkegiaodien.TKGiaoDienActivity;
+import com.example.thietkegiaodien.basic.CustomListVIewActivity;
 import com.example.thietkegiaodien.view.chucai.ChuCai;
 import com.example.thietkegiaodien.view.convat.ConVat;
 import com.example.thietkegiaodien.view.mausac.Mausac;
+import com.example.thietkegiaodien.view.sodem.SoDem;
+import com.google.android.material.button.MaterialButtonToggleGroup;
 
 public class ViewMainActivity extends AppCompatActivity {
 
     private Button buttonChuCai;
     private Button buttonConVat;
     private Button buttonMausac;
+    private Button buttonSodem;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,6 +53,15 @@ public class ViewMainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent1 = new Intent(ViewMainActivity.this, Mausac.class);
                 startActivity(intent1);
+            }
+        });
+
+        buttonSodem = (Button) findViewById(R.id.button_so_dem);
+        buttonSodem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewMainActivity.this, SoDem.class);
+                startActivity(intent);
             }
         });
     }
